@@ -1,6 +1,6 @@
 FROM tomcat:latest
 
-MAINTAINER <YOUR_NAME_HERE>
+MAINTAINER Phechorda
 
 COPY ./webapp.war /usr/local/tomcat/webapps
 
