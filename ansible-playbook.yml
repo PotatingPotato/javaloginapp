@@ -10,12 +10,12 @@
 
     - name: copy Dockerfile from Jenkins to target host
       copy:
-        src: /var/lib/jenkins/workspace/Phechorda-Deploy-on-Container-using-Ansible-with-SonarQube/Dockerfile
+        src: /var/lib/jenkins/workspace/Demo-DevSecOps/Dockerfile
         dest: /opt/docker
 
     - name: copy war from Jenkins to target host
       copy:
-        src: /var/lib/jenkins/workspace/Phechorda-Deploy-on-Container-using-Ansible-with-SonarQube/target/webapp.war
+        src: /var/lib/jenkins/workspace/Demo-DevSecOps/target/webapp.war
         dest: /opt/docker
 
     - name: stop current container
